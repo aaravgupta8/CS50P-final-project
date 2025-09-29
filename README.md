@@ -64,31 +64,16 @@ To enhance the user experience, the program uses the external library **Rich** t
 Dry-run (preview without changes)
    ```bash
    python project.py ~/Downloads --dry-run
-Execute (actually move files)
-   ```bash
    python project.py ~/Downloads --execute
-
-Organize into a different destination
-   ```bash
    python project.py ~/Downloads --dest ~/CleanedDownloads --execute
-Exclude certain file types
-bash
-Copy code
-python project.py ~/Downloads --execute --exclude "*.exe" "*.iso"
+   python project.py ~/Downloads --execute --exclude "*.exe" "*.iso"
 After execution, you will see subfolders such as:
-
 Images/
-
 Documents/
-
 Audio/
-
 Video/
-
 Archives/
-
 Code/
-
 Other/
 
 Running Tests
