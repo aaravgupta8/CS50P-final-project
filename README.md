@@ -61,9 +61,8 @@ To enhance the user experience, the program uses the external library **Rich** t
    ```bash
    pip install -r requirements.txt
 4) Usage
-Dry-run (preview without changes)
    ```bash
-   python project.py ~/Downloads --dry-run
+   python project.py ~/Downloads --dry-run 
    python project.py ~/Downloads --execute
    python project.py ~/Downloads --dest ~/CleanedDownloads --execute
    python project.py ~/Downloads --execute --exclude "*.exe" "*.iso"
