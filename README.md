@@ -89,5 +89,5 @@ Another choice was whether to copy or move files. I decided on moving by default
 
 The decision to include a dry-run mode was also critical. It provides peace of mind, especially when running the tool on large folders. Dry-run ensures that users can review the planned actions before committing to actual moves.
 
-Conclusion
+## Conclusion
 The Digital Declutter Assistant is a practical Python project that solves a common problem while showcasing core programming skills and good design practices. It highlights the importance of safety, usability, and testing in software development. I am proud of this project because it is both academically appropriate for CS50P and practically useful in everyday life. I hope that others who try it will find their folders a little cleaner and their workflow a little easier as a result.
