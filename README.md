@@ -48,43 +48,29 @@ To enhance the user experience, the program uses the external library **Rich** t
 
 ## Installation and Setup
 
-1. Make sure Python 3.10 or higher is installed.  
+1) Make sure Python 3.10 or higher is installed.  
    Check with:
    ```bash
    python --version
-Clone the repository from GitHub:
+2) Clone the repository from GitHub:
+   ```bash
+   git clone https://github.com/aaravgupta8/CS50P-final-project.git
+   cd CS50P-final-project
 
-bash
-Copy code
-git clone https://github.com/aaravgupta8/CS50P-final-project.git
-cd CS50P-final-project
-(Optional but recommended) Create and activate a virtual environment:
-
-bash
-Copy code
-python -m venv venv
-# On macOS/Linux:
-source venv/bin/activate
-# On Windows (PowerShell):
-venv\Scripts\activate
-Install dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Usage
+3) Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+4) Usage
 Dry-run (preview without changes)
-bash
-Copy code
-python project.py ~/Downloads --dry-run
+   ```bash
+      python project.py ~/Downloads --dry-run
 Execute (actually move files)
-bash
-Copy code
-python project.py ~/Downloads --execute
+   ```bash
+   python project.py ~/Downloads --execute
+
 Organize into a different destination
-bash
-Copy code
-python project.py ~/Downloads --dest ~/CleanedDownloads --execute
+   ```bash
+   python project.py ~/Downloads --dest ~/CleanedDownloads --execute
 Exclude certain file types
 bash
 Copy code
