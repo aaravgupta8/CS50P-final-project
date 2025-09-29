@@ -63,7 +63,7 @@ To enhance the user experience, the program uses the external library **Rich** t
 4) Usage
 Dry-run (preview without changes)
    ```bash
-      python project.py ~/Downloads --dry-run
+   python project.py ~/Downloads --dry-run
 Execute (actually move files)
    ```bash
    python project.py ~/Downloads --execute
