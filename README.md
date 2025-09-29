@@ -80,9 +80,9 @@ Make sure pytest is installed, then execute:
   ```bash
   pip install pytest
   pytest -v
----
 
-Design Choices
+```
+## Design Choices
 One major design choice was whether to use only the Python standard library or include external packages. I decided to add Rich because it makes the output more user-friendly and visually engaging, which is important for a program that produces a lot of text. Without Rich, the program would still function correctly, but the user experience would be less polished.
 
 Another choice was whether to copy or move files. I decided on moving by default because the goal of the project is decluttering. However, I included a --dest option so users can move files into a new destination folder instead of reorganizing the source folder in place. This provides flexibility and safety if a user wants to test the tool without altering the original directory.
