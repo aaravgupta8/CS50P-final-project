@@ -76,14 +76,12 @@ Code/
 Other/
 
 Running Tests
-Make sure pytest is installed:
-    ```bash
-    pip install pytest
-Run all tests:
+Make sure pytest is installed, then execute:
+  ```bash
+  pip install pytest
+  pytest -v
+---
 
-bash
-Copy code
-pytest -v
 Design Choices
 One major design choice was whether to use only the Python standard library or include external packages. I decided to add Rich because it makes the output more user-friendly and visually engaging, which is important for a program that produces a lot of text. Without Rich, the program would still function correctly, but the user experience would be less polished.
 
