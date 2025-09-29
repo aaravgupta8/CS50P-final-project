@@ -1,4 +1,3 @@
-# test_project.py
 from pathlib import Path
 import os, stat, pytest
 from project import categorize_file, move_file_safe, scan_folder

@@ -1,4 +1,3 @@
-# project.py
 from pathlib import Path
 import os
 import shutil
@@ -11,7 +10,7 @@ console = Console()
 @dataclass
 class MoveResult:
     path: Path
-    action: str          # "moved" | "skipped" | "error"
+    action: str         
     reason: str | None
     dest: Path | None
 
@@ -58,7 +57,7 @@ def move_file_safe(src: Path, dest_dir: Path, dry_run: bool = True) -> MoveResul
 
     dest = unique_destination(dest_dir, src.name)
 
-    # Dry-run: just plan the move
+    
     if dry_run:
         return MoveResult(src, "moved", "dry-run", dest)
 
@@ -145,7 +144,7 @@ def main():
 
     results = scan_folder(src, out_root, dry_run=dry_run, exclude=args.exclude)
 
-    # Always pretty-print full per-file report
+    
     pretty_print(results)
     console.print("[bold green]" + generate_report(results) + "[/bold green]")
 
