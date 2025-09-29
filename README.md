@@ -77,10 +77,8 @@ Other/
 
 Running Tests
 Make sure pytest is installed:
-
-bash
-Copy code
-pip install pytest
+    ```bash
+    pip install pytest
 Run all tests:
 
 bash
